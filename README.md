@@ -2,7 +2,7 @@
 
 ### Description
 
-This project is a web application built using React.js for the user interface. It incorporates React Router for seamless navigation between pages and utilizes state management through context API for managing user data. The UI is designed to be responsive, ensuring a consistent experience across various devices. Styling is achieved using SCSS.
+This project is a web application built using React.js for the user interface. It incorporates React Router for seamless navigation between pages and utilizes state management through context API for managing user data. Styling is achieved using SCSS.
 
 A data source, JSON file(userData), is employed to simulate user data within the application.
 
