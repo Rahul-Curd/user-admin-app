@@ -1,0 +1,67 @@
+.new-user {
+  display: flex;
+  width: 100%;
+
+  &__container {
+    flex: 6;
+
+    .form-heading,
+    .form-body {
+      margin: 20px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 20px;
+        color: gray;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 60px;
+        border-radius: 5px;
+        border: 0.5px solid lightgray;
+
+        .form-input {
+          margin-bottom: 20px;
+          label {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(104, 100, 100);
+          }
+
+          input {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            outline: none;
+            border-bottom: 3px solid lightgray;
+            
+            &:focus {
+              border-bottom: 3px solid green;
+              &:invalid {
+                border-bottom: 3px solid crimson;
+              }
+            }
+          }
+        }
+        .submit-button {
+          font-size: 16px;
+          font-weight: 600;
+          background-color: #7451f8;
+          color: whitesmoke;
+          padding: 5px;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

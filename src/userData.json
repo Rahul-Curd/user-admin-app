@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "fullName": "Snow White",
+    "role": "user",
+    "email": "snow@gmail.com"
+  },
+  {
+    "id": 2,
+    "fullName": "Jamie White",
+    "email": "jamie@gmail.com",
+    "role": "user"
+  },
+  {
+    "id": 3,
+    "fullName": "Lannister Mac",
+    "email": "lannister@gmail.com",
+    "role": "admin"
+  },
+  {
+    "id": 4,
+    "fullName": "Tony Stark",
+    "email": "stark@gmail.com",
+    "role": "user"
+  },
+  {
+    "id": 5,
+    "fullName": "Targaryen Trips",
+    "email": "targaryen@gmail.com",
+    "role": "user"
+  },
+  {
+    "id": 6,
+    "fullName": "Melisandre Jane",
+    "email": "melisandre@gmail.com",
+    "role": "user"
+  },
+  {
+    "id": 7,
+    "fullName": "Clifford Paul",
+    "email": "cliffordw@gmail.com",
+    "role": "user"
+  },
+  {
+    "id": 8,
+    "fullName": "Frances Cuper",
+    "email": "frances@gmail.com",
+    "role": "user"
+  },
+  {
+    "id": 9,
+    "fullName": "Kelvin Kane",
+    "email": "kelvin@gmail.com",
+    "role": "admin"
+  },
+  {
+    "id": 10,
+    "fullName": "Roxie Penue",
+    "email": "roxie@gmail.com",
+    "role": "user"
+  },
+  {
+    "id": 11,
+    "fullName": "Lamer White",
+    "email": "lamer@gmail.com",
+    "role": "user"
+  },
+  {
+    "id": 12,
+    "fullName": "Porsen Mileng",
+    "email": "porsen@gmail.com",
+    "role": "user"
+  }
+]

@@ -1,0 +1,19 @@
+.dataTable {
+  padding: 10px 25px; 
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .viewButton {
+      color: darkblue;
+      cursor: pointer;
+    }
+    
+    .deleteButton {
+      color: red;
+      cursor: pointer;
+    }
+  }
+}

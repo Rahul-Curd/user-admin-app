@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import {
+  createBrowserRouter,
+  Route,
+  RouterProvider,
+  Routes,
+} from "react-router-dom";
+import UserList from "./pages/userList/UserList";
+import User from "./pages/user/User";
+import NewUser from "./pages/newUser/NewUser";
+import UserContextProvider from "./contexts/UserContextProvider";
+import Home from "./pages/home/Home";
 
-function App() {
+const router = createBrowserRouter([{ path: "*", Component: Root }]);
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserContextProvider>
+      <RouterProvider router={router} />
+    </UserContextProvider>
   );
 }
 
-export default App;
+function Root() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="users">
+        <Route index element={<UserList />} />
+        <Route path=":userId" element={<User />} />
+        <Route path="new">
+          <Route index element={<NewUser />} />
+          <Route path=":userId" element={<NewUser />} />
+        </Route>
+      </Route>
+    </Routes>
+  );
+}
